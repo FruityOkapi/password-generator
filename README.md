@@ -1,100 +1,31 @@
-# 03 JavaScript: Password Generator
+# Password Generator!
 
-## Your Task
+## Description
+This website is a password generator. On opening the page you will see a title and a box with the words "Generate a Password", a box with "Your secure password" and under the box is a button that says Generate password. Upon clicking the button the window will prompt you to enter a number 8-128. If you click cancel, it will say "Please enter a number!" and the box will now say "Please Try Again!" as an error message. If you enter a value not in the specified range it will notify you to enter a number within the accepted range and display the same error message will appear. When a user enters an acceptable number they are asked a series of questions about which types of characters they want. They can click ok/cancel to add the characters they want and the ones they don't. There's an error message that will appear if they add no characters to their password and they'll have to restart. If they select characters, they will be met with the page updating and giving them a randomized password!
 
-This week's Challenge requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
+I wanted to make a website that allows users to make a randomly generated password easily while being able to add/subtract specific types of character.
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
+I learned a few things about JavaScript while making this generator. I didn't know/remember that you can use .charAT to select specific characters in a string to not have to type out an array for letters. I also was able to apply and solidify the knowledge about making new strings out of already established strings. 
 
-## User Story
+## Installation
+This is N/A as it is a webpage and can be run without installing.
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+## Usage
+This webpage is for being able to make random passwords that are customizable in length and character type. Click the button to start making your own password! Then follow the instructions provided by the window!
 
-## Acceptance Criteria
+Here are some screenshots of the site showing the page on startup and when you click the button.
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+![website screenshot1](./assets/images/Screenshot_76.png)
+![website screenshot1](./assets/images/Screenshot_77.png)
 
-## Mock-Up
+Here is a link to the live site:
 
-The following image shows the web application's appearance and functionality:
+## Credits
+I learned about using strings like arrays in this stack overflow:
+https://stackoverflow.com/questions/1349404/generate-random-string-characters-in-javascript
 
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
+I learned about using remainders to check if a value is an integer here:
+https://stackoverflow.com/questions/14636536/how-to-check-if-a-variable-is-an-integer-in-javascript
 
-## Grading Requirements
-
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
-
-This Challenge is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the preceding acceptance criteria.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
-- - -
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+## License
+The license is a default MIT license in the LICENSE.md file
