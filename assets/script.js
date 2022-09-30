@@ -33,7 +33,7 @@ function writePassword() {
     var lettersL= "abcdefghijklmnopqrstuvwxyz";
     var lettersU= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     var numbers= "1234567890";
-    var specials= "!@#$%^&*()-+?><.,";
+    var specials= " !#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
     
     // The next 4 var are to let users decide what kind of characters are selected.
     var lowerB= window.confirm("Would you like your password to have lowercase letters?");
