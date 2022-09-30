@@ -27,31 +27,38 @@ function writePassword() {
     
     var lowerB= window.confirm("Would you like your password to have lowercase letters?");
     if (lowerB) {
-      addWhat += lettersL
+      addWhat += lettersL;
     }
     // Console logging to test to make sure the code is working.
-    console.log(addWhat)
+    console.log(addWhat);
     
     var upperB= window.confirm("Would you like your password to have uppercase letters?");
     if (upperB) {
-      addWhat += lettersU
+      addWhat += lettersU;
     }
     console.log(addWhat)
     
     var number= window.confirm("Would you like your password to have numbers?");
     if (number) {
-      addWhat += numbers
+      addWhat += numbers;
     }
-    console.log(addWhat)
+    console.log(addWhat);
     
     var special= window.confirm("Would you like your password to have special characters?");
     if (special) {
       addWhat += specials
     }
-    console.log(addWhat)
+    console.log(addWhat);
+
     
+    if ((lowerB === false && upperB === false && number === false && special === false)) {
+      window.alert("Unable to make a password without adding characters of any kind. Please try again and add some characters.");
+    }
+
     var addWhatLength= addWhat.length;
     
+    // This for loop is to take the addWhat's total characters and randomly select characters from the string and add them to pword as its own string
+
     for (var i = 0; i < pLength; i++) {
       pword += addWhat.charAt(Math.floor(Math.random() * addWhatLength));
     }
