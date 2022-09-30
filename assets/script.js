@@ -7,17 +7,25 @@ function writePassword() {
   function generatePassword(pLength) {
     // This var adds a prompt for users to enter the desired password length which sets the pLength in the function's variables
     var pLength = window.prompt("Please enter the amount of characters you wish your password to be within 8-128 characters:");
+    // Error message
+    var tryAgain= "Please Try Again!"
+    // Trying to define a integer checker so letters and decimals don't trigger a false positive 
 
     // This else if statement is to set the character limit for the password. If a user enters a invalid number they are given an error message and must re-enter a new number.
     if (!pLength) {
       window.alert("Please enter a number!");
-      generatePassword()
+      return tryAgain;
+      // If the remainder of the pLength after dividing by 1 is not 0 then it is not an integer and not accepted in the code
+    } else if (pLength % 1 !== 0) {
+      window.alert("Please enter a number or a whole number!");
+      return tryAgain;
     } else if (pLength < 8) {
       window.alert("Please enter a number more than 8!");
-      generatePassword()
+      return tryAgain;
     } else if (pLength > 128) {
       window.alert("Please enter a number less than 128!");
-    } 
+      return tryAgain;
+    }
     
     // These var are to establish the strings of letters as long arrays are annoying to type.
     var addWhat = ""
@@ -56,6 +64,7 @@ function writePassword() {
     // This is to add an error message when users don't select any characters for their password
     if ((lowerB === false && upperB === false && number === false && special === false)) {
       window.alert("Unable to make a password without adding characters of any kind. Please try again and add some characters.");
+      return tryAgain;
     }
 
     var addWhatLength= addWhat.length;
