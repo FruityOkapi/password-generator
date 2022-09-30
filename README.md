@@ -19,6 +19,7 @@ Here are some screenshots of the site showing the page on startup and when you c
 ![website screenshot1](./assets/images/Screenshot_77.png)
 
 Here is a link to the live site:
+https://fruityokapi.github.io/password-generator/
 
 ## Credits
 I learned about using strings like arrays in this stack overflow:
